@@ -9,21 +9,15 @@ Time spent: **5** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] **Choose any endpoint on The MovieDB API except `now_playing`**
-  - Chosen Endpoint: `[TODO: FILL ME IN TO GET CREDIT]`
-- [] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
-- [ ] **Use Glide to load and display at least one image per entry**
-- [ ] **Click on an entry to view specific details about that entry using Intents**
-
-The following **optional** features are implemented:
-
-- [ ] **Add another API call and RecyclerView that lets the user interact with different data.** 
-- [ ] **Add rounded corners to the images using the Glide transformations**
-- [ ] **Implement a shared element transition when user clicks into the details of a movie**
+- [X] **Choose any endpoint on The MovieDB API except `now_playing`**
+  - Chosen Endpoint: `[Popular People]`
+- [X] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
+- [X] **Use Glide to load and display at least one image per entry**
+- [X] **Click on an entry to view specific details about that entry using Intents**
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [X] Add Back Button
 
 ## Video Walkthrough
 

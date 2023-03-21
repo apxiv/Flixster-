@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-const val ARTICLE_EXTRA = "ARTICLE_EXTRA"
+const val ACTOR_EXTRA = "ACTOR_EXTRA"
 
 class ActorAdapter(private val context: Context, private val actors: List<Actor>) :
     RecyclerView.Adapter<ActorAdapter.ViewHolder>() {
@@ -38,8 +38,9 @@ class ActorAdapter(private val context: Context, private val actors: List<Actor>
 
         override fun onClick(v: View?) {
             val actor = actors[absoluteAdapterPosition]
+
             val intent = Intent(context, AboutActivity::class.java)
-            //intent.putExtra(ARTICLE_EXTRA, actor)
+            intent.putExtra(ACTOR_EXTRA, actor)
             context.startActivity(intent)
         }
 
@@ -47,7 +48,7 @@ class ActorAdapter(private val context: Context, private val actors: List<Actor>
             titleTextView.text = actor.name
 
             Glide.with(context)
-                .load("https://image.tmdb.org/t/p/w500/${actors[position].profilePath}")
+                .load("https://image.tmdb.org/t/p/w500/${actor.profilePath}")
                 .into(mediaImageView)
         }
     }
